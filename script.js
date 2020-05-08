@@ -13,7 +13,7 @@ window.onload = function () {
 
     contentfulClient.getEntries({
         content_type: "blogPost",
-        order: "fields.date"
+        order: "-fields.date"
       })
       .then(function(entries) {
         let posts = entries.items;
