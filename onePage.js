@@ -30,7 +30,7 @@ window.onload = function() {
             let contentContent = contentIndex.content[0].value;
             let paragraph = contentContent;
             let paragraphEl = document.createElement("p");
-            paragraphEl.innerText = paragraph;
+            paragraphEl.innerHTML = paragraph;
             contentEl.append(paragraphEl);
         })
         overallDiv.append(heading);
